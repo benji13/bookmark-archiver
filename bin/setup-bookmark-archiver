@@ -58,6 +58,7 @@ elif which brew > /dev/null; then   # 🐍 eye of newt
     fi
     echo "[+] Installing python3, wget, curl  (ignore 'already installed' warnings)..."
     brew install python3 wget curl
+    python3 -m pip install requests
 else
     echo "[X] Could not find aptitude or homebrew! ‼️"
     echo ""
